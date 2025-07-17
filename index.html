@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Autobounds Introduction</title>
+  <style>
+    body {
+      background: #f0f4f8;
+      color: #222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 2rem;
+      max-width: 700px;
+    }
+    h1 {
+      color: #004a99;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+    .container {
+      background: #ffffff;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Introducing Autobounds</h1>
+    <p>
+      Autobounds is an advanced software tool designed to automate the calculation of partial identification bounds in causal inference problems.
+    </p>
+    <p>
+      Developed by researchers at the University of Pennsylvania, Johns Hopkins University, and Princeton University, Autobounds leverages polynomial programming and dual relaxation techniques to compute the sharpest possible bounds on causal effects, even when data is incomplete or mismeasured. You can learn more in their 
+      <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2023.2216909" target="_blank" rel="noopener noreferrer">research paper</a>.
+    </p>
+    <p>
+      This tool is particularly valuable in fields like economics, political science, and epidemiology, where researchers often face challenges such as confounding, selection bias, measurement error, and noncompliance. By automating the process, Autobounds allows for more precise and reliable estimation of causal relationships, facilitating better-informed decision-making.
+    </p>
+   <p>
+  To get started, download the software via <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> and run the following command to launch Autobounds:
+  <br /><code>docker run -p 8888:8888 gjardimduarte/autolab:v5</code>
+  <br />This will allow you to easily integrate Autobounds into your causal inference workflows.
+</p>
+  </div>
+</body>
+</html>
